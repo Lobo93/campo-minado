@@ -1,0 +1,119 @@
+body {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+#campo {
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.casa {
+	width: 30px;
+	height: 30px;
+	background-color: #eee;
+	font-size: 18px;
+	font-weight: 600;
+	border: none;
+	border-right: solid 1px #bbb;
+	border-bottom: solid 1px #bbb;
+	margin: 0;
+	cursor: pointer;
+	transition: background-color .15s;
+}
+
+.casa:hover {
+	background-color: #e5e5e5;
+}
+
+.casa:disabled {
+	transition: background-color .05s;
+	background-color: #ddd;
+	cursor: default;
+}
+
+.cor0 {
+	color: #bbb;
+}
+
+.cor1 {
+	color: #1a1;
+}
+
+.cor2 {
+	color: #5af;
+}
+
+.cor3 {
+	color: #24d;
+}
+
+.cor4 {
+	color: #b3e;
+}
+
+.color5 {
+	color: #c90;
+}
+
+.cor6 {
+	color: #d22;
+}
+
+.cor7 {
+	color: #900;
+}
+
+.cor8 {
+	color: #413;
+}
+
+.col9,
+.cor9:disabled {
+	transition-duration: 0s;
+	color: #111;
+	background-color: #d44;
+}
+
+.aberto,
+.aberto:disabled {
+	transition-duration: 0s;
+	color: #111;
+	background-color: #fcc;
+}
+
+.botao-bandeira {
+	width: 48px;
+	height: 48px;
+	margin: 20px;
+	font-size: 24px;
+	color: #d44;
+	background-color: #eee;
+	border: solid 1px #bbb;
+	cursor: pointer;
+}
+
+.botao-bandeira.ativo {
+	animation: piscando .1s cubic-bezier(1, 0, 0, 1) infinite alternate;
+}
+
+@keyframes piscando {
+	from {
+		background-color: #eee;
+	}
+
+	to {
+		background-color: #ddd;
+	}
+}
+
+.botao-reset {
+	height: 30px;
+	padding: 0 10px;
+	margin: 20px;
+	font-size: 16px;
+	color: #888;
+	background-color: #eee;
+	border: solid 1px #bbb;
+	cursor: pointer;
+}
